@@ -31,23 +31,7 @@
 #include "distributed/frArchive.h"
 using namespace fr;
 template <class Archive>
-void drAccessPattern::serialize(Archive& ar, const unsigned int version)
-{
-  (ar) & boost::serialization::base_object<drBlockObject>(*this);
-  (ar) & beginPoint_;
-  (ar) & beginLayerNum_;
-  (ar) & beginArea_;
-  (ar) & mazeIdx_;
-  (ar) & pin_;
-  (ar) & validAccess_;
-  (ar) & vUIdx_;
-  (ar) & vDIdx_;
-  (ar) & onTrackX_;
-  (ar) & onTrackY_;
-  (ar) & pinCost_;
-  // vU_ and vD_ are initialized at init and never used in end.(No Need to
-  // serialize)
-}
+void drAccessPattern::serialize(Archive& ar, const unsigned int version) { (ar) & boost::serialization::base_object<drBlockObject>(*this); (ar) & beginPoint_; (ar) & beginLayerNum_; (ar) & beginArea_; (ar) & mazeIdx_; (ar) & pin_; (ar) & validAccess_; (ar) & vUIdx_; (ar) & vDIdx_; (ar) & onTrackX_; (ar) & onTrackY_; (ar) & pinCost_; // vU_ and vD_ are initialized at init and never used in end.(No Need to serialize) }
 
 // Explicit instantiations
 template void drAccessPattern::serialize<frIArchive>(
