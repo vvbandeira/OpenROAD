@@ -142,7 +142,7 @@ configure_file(
 # Ask CMake to output a compile_commands.json file for use with things like clang-tidy
 set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 
-
+set(CMAKE_POSITION_INDEPENDENT_CODE TRUE)
 
 add_subdirectory(third-party)
 
