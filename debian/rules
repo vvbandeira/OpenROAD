@@ -4,6 +4,7 @@ include /usr/share/dpkg/default.mk
 
 export DH_VERBOSE = 1
 
+# Disable lto optimization due to issues with GUI
 export DEB_BUILD_MAINT_OPTIONS=optimize=-lto
 
 %:
