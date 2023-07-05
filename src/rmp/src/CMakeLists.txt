@@ -73,7 +73,7 @@ target_link_libraries(rmp
     ${ABC_LIBRARY}
  )
 
-if (Python3_FOUND AND BUILD_PYTHON)
+if (Python3_FOUND AND BUILD_OR_PYTHON_INTERFACE)
   swig_lib(NAME          rmp_py
            NAMESPACE     rmp
            LANGUAGE      python

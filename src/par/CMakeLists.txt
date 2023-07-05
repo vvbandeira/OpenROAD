@@ -136,7 +136,7 @@ if (LOAD_CPLEX)
 endif (LOAD_CPLEX)
 
 
-if (Python3_FOUND AND BUILD_PYTHON)
+if (Python3_FOUND AND BUILD_OR_PYTHON_INTERFACE)
   swig_lib(NAME          par_py
            NAMESPACE     par
            LANGUAGE      python

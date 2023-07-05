@@ -104,7 +104,7 @@ add_custom_target(opendp_tags etags -o TAGS
   WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-if (Python3_FOUND AND BUILD_PYTHON)
+if (Python3_FOUND AND BUILD_OR_PYTHON_INTERFACE)
   swig_lib(NAME          dpl_py
            NAMESPACE     dpl
            LANGUAGE      python

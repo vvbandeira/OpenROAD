@@ -43,7 +43,7 @@ swig_lib(NAME      utl
          SWIG_INCLUDES ${PROJECT_SOURCE_DIR}/src
 )
 
-if (Python3_FOUND AND BUILD_PYTHON)
+if (Python3_FOUND AND BUILD_OR_PYTHON_INTERFACE)
   swig_lib(NAME          utl_py
            NAMESPACE     utl
            LANGUAGE      python

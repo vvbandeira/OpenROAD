@@ -104,7 +104,7 @@ messages(
   TARGET stt
 )
 
-if (Python3_FOUND AND BUILD_PYTHON)
+if (Python3_FOUND AND BUILD_OR_PYTHON_INTERFACE)
   swig_lib(NAME          stt_py
            NAMESPACE     stt
            LANGUAGE      python

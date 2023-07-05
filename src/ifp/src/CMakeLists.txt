@@ -64,7 +64,7 @@ target_link_libraries(ifp
     upf_lib
 )
 
-if (Python3_FOUND AND BUILD_PYTHON)
+if (Python3_FOUND AND BUILD_OR_PYTHON_INTERFACE)
   swig_lib(NAME          ifp_py
            NAMESPACE     ifp
            LANGUAGE      python

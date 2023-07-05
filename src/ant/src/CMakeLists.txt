@@ -71,7 +71,7 @@ messages(
   OUTPUT_DIR ..
 )
 
-if (Python3_FOUND AND BUILD_PYTHON)
+if (Python3_FOUND AND BUILD_OR_PYTHON_INTERFACE)
   swig_lib(NAME          ant_py
            NAMESPACE     ant
            LANGUAGE      python

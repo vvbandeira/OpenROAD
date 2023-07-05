@@ -159,7 +159,7 @@ include(UseSWIG)
 find_package(Boost REQUIRED)
 message(STATUS "boost: ${Boost_VERSION}")
 find_package(Python3 COMPONENTS Development REQUIRED)
-option(BUILD_PYTHON "Build the Python3 interface" ON)
+option(BUILD_OR_PYTHON_INTERFACE "Build the Python3 interface" ON)
 
 option(ALLOW_WARNINGS "Flag to allow compilation with compiler warnings: on by default" ON)
 if (NOT ALLOW_WARNINGS)
@@ -365,7 +365,7 @@ if (CUDD_LIB)
   target_link_libraries(openroad ${CUDD_LIB})
 endif()
 
-if (Python3_FOUND AND BUILD_PYTHON)
+if (Python3_FOUND AND BUILD_OR_PYTHON_INTERFACE)
   message(STATUS "Python3 enabled")
   target_compile_definitions(openroad PRIVATE ENABLE_PYTHON3)
 

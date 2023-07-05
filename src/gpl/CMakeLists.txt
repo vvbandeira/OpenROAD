@@ -114,7 +114,7 @@ else()
   message(STATUS "GPU is not enabled")
 endif()
 
-if (Python3_FOUND AND BUILD_PYTHON)
+if (Python3_FOUND AND BUILD_OR_PYTHON_INTERFACE)
   swig_lib(NAME          gpl_py
            NAMESPACE     gpl
            LANGUAGE      python

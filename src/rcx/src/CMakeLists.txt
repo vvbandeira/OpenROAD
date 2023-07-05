@@ -131,7 +131,7 @@ if(ENABLE_TESTS)
   add_dependencies(build_and_test rcxUnitTest)
 endif()
 
-if (Python3_FOUND AND BUILD_PYTHON)
+if (Python3_FOUND AND BUILD_OR_PYTHON_INTERFACE)
   swig_lib(NAME          rcx_py
            NAMESPACE     rcx
            LANGUAGE      python

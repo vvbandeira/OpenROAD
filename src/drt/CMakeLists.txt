@@ -236,7 +236,7 @@ if (VTune_FOUND)
 
 endif(VTune_FOUND)
 
-if (Python3_FOUND AND BUILD_PYTHON)
+if (Python3_FOUND AND BUILD_OR_PYTHON_INTERFACE)
   swig_lib(NAME          drt_py
            NAMESPACE     drt
            LANGUAGE      python

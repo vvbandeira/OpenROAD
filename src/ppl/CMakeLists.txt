@@ -76,7 +76,7 @@ messages(
   TARGET ppl
 )
 
-if (Python3_FOUND AND BUILD_PYTHON)
+if (Python3_FOUND AND BUILD_OR_PYTHON_INTERFACE)
   swig_lib(NAME          ppl_py
            NAMESPACE     ppl
            LANGUAGE      python

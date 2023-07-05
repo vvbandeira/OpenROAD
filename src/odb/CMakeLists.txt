@@ -55,7 +55,7 @@ target_link_libraries(odb
 include(${SWIG_USE_FILE})
 
 add_subdirectory(src/swig/common)
-if (Python3_FOUND AND BUILD_PYTHON)
+if (Python3_FOUND AND BUILD_OR_PYTHON_INTERFACE)
   add_subdirectory(src/swig/python)
 endif()
 add_subdirectory(src/swig/tcl)

@@ -64,7 +64,7 @@ messages(
   TARGET fin
 )
 
-if (Python3_FOUND AND BUILD_PYTHON)
+if (Python3_FOUND AND BUILD_OR_PYTHON_INTERFACE)
   swig_lib(NAME          fin_py
            NAMESPACE     fin
            LANGUAGE      python
