@@ -1,4 +1,4 @@
-add_library(dft_stitch_lib
+add_library(dft_stitch_lib STATIC
   # Keep sorted
   ScanStitch.cpp
 )

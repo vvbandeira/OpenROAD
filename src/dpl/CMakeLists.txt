@@ -40,7 +40,7 @@ include("openroad")
 find_package(TCL)
 find_package(Boost)
 
-add_library(dpl_lib
+add_library(dpl_lib STATIC
   src/Opendp.cpp
   src/dbToOpendp.cpp
   src/Grid.cpp

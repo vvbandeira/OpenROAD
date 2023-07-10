@@ -38,7 +38,7 @@ include("openroad")
 # https://github.com/The-OpenROAD-Project/OpenROAD/issues/1186
 find_package(LEMON NAMES LEMON lemon REQUIRED)
 
-add_library(cts_lib
+add_library(cts_lib STATIC
     Clock.cpp
     HTreeBuilder.cpp
     SinkClustering.cpp

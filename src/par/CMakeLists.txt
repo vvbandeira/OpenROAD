@@ -47,9 +47,8 @@ if (LOAD_CPLEX)
 endif (LOAD_CPLEX)
 
 find_package(Threads REQUIRED)
-find_package(ortools REQUIRED)
 
-add_library(par_lib
+add_library(par_lib STATIC
   src/PartitionMgr.cpp
   src/TritonPart.cpp
   src/Hypergraph.cpp

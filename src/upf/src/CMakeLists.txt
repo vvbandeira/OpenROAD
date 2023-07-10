@@ -35,7 +35,7 @@
 
 include("openroad")
 
-add_library(upf_lib
+add_library(upf_lib STATIC
   upf.cpp
 )
 

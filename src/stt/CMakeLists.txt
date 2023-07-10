@@ -61,7 +61,7 @@ swig_lib(NAME      stt
          SCRIPTS   src/SteinerTreeBuilder.tcl
 )
 
-add_library(stt_lib
+add_library(stt_lib STATIC
     src/SteinerTreeBuilder.cpp
     ${FLUTE_HOME}/flute.cpp
     ${POWV9_CPP}

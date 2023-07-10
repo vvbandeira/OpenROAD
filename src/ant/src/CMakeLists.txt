@@ -37,7 +37,7 @@ swig_lib(NAME      ant
          SCRIPTS   AntennaChecker.tcl
 )
 
-add_library(ant_lib
+add_library(ant_lib STATIC
     AntennaChecker.cc
 )
 

@@ -41,7 +41,7 @@ swig_lib(NAME      rsz
          SCRIPTS   Resizer.tcl
 )
 
-add_library(rsz_lib
+add_library(rsz_lib STATIC
     BufferedNet.cc
     RepairDesign.cc
     RepairHold.cc

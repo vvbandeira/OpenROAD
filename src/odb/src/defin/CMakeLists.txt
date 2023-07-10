@@ -1,4 +1,4 @@
-add_library(defin
+add_library(defin STATIC
     definNet.cpp 
     definSNet.cpp 
     definComponent.cpp 

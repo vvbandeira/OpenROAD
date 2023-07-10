@@ -45,7 +45,7 @@ swig_lib(NAME      grt
          SCRIPTS   src/GlobalRouter.tcl
 )
 
-add_library(grt_lib
+add_library(grt_lib STATIC
     src/Grid.cpp
     src/Net.cpp
     src/Pin.cpp
