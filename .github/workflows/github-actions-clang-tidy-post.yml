@@ -12,4 +12,4 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: The-OpenROAD-Project/clang-tidy-review/post@master
+      - uses: The-OpenROAD-Project/clang-tidy-review/post@test-pyyaml

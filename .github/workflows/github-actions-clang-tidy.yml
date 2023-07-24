@@ -13,10 +13,10 @@ jobs:
         with:
           submodules: 'recursive'
       - name: ClangTidy Gen
-        uses: The-OpenROAD-Project/clang-tidy-review@master
+        uses: The-OpenROAD-Project/clang-tidy-review@test-pyyaml
         with:
           build_dir: './build'
           cmake_command: cmake . -B build
           config_file: '.clang-tidy'
           split_workflow: true
-      - uses: The-OpenROAD-Project/clang-tidy-review/upload@master
+      - uses: The-OpenROAD-Project/clang-tidy-review/upload@test-pyyaml
