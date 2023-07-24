@@ -36,6 +36,9 @@
 #include <libgen.h>
 #include <tcl.h>
 
+
+#include <stdlib.h>
+
 #include <array>
 #include <boost/stacktrace.hpp>
 #include <climits>
@@ -236,6 +239,7 @@ int main(int argc, char* argv[])
     }
   }
 
+  system("ls");
   // Generate a stacktrace on crash
   signal(SIGABRT, handler);
   signal(SIGBUS, handler);
