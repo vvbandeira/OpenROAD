@@ -259,6 +259,8 @@ build --jobs=200
 # Enable local disk caching to supplement the remote cache.
 build --disk_cache=~/.cache/bazel-disk-cache
 build --repository_cache=~/.cache/bazel-repository-cache
+# Fallback URLs for third-party archives whose upstream host went away.
+common --downloader_config=bazel/downloader.cfg
 
 # CI only needs to know if the build succeeded, not the artifacts themselves.
 build:ci --remote_download_minimal
